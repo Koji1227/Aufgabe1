@@ -8,8 +8,9 @@ result = []
 
 with open('cities.csv', 'r', encoding = 'utf-8', newline = '') as f_r:
     reader = csv.reader(f_r)
+    header = next(reader) # Skip the header
     for row in reader:
-        if row[0].startswith('A') and int(row[3]) > 10000:
+        if ('a' in row[0]) and (int(row[3]) > 10000):
             result.append(row)
 
 sorted_result = sorted(result, key = lambda x: (x[2], x[0]))
