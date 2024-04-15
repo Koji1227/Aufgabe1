@@ -52,3 +52,8 @@ fil_2 = filter_2(data, 10000)
 selected_rows = select(data, fil_1, fil_2)
 result = sort(selected_rows, 2, 0)
 write_csv(result, 'results.csv')
+
+# Feedback:
+# - The code works correctly and the output is correct.
+# - if __name__ == '__main__': would be a good addition.
+# - the name of the functions filter_1 and filter_2 could be more descriptive.
