@@ -40,3 +40,5 @@ if __name__ == "__main__":
     print(publisher1)
     print(book1)
     print(book1.get_citation())
+
+# Feedback: Good solution, prints the single objects and a citation of the book.
