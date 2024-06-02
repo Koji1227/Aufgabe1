@@ -21,7 +21,7 @@ class Publisher:
 class Book:
     def __init__(self, title, year, author, publisher):
         self.title = title
-        self.year = year
+        self.year = int(year)
         self.author = author
         self.publisher = publisher
     
@@ -40,3 +40,5 @@ if __name__ == "__main__":
     print(publisher1)
     print(book1)
     print(book1.get_citation())
+
+# Feedback: Good solution, prints the single objects and a citation of the book.
